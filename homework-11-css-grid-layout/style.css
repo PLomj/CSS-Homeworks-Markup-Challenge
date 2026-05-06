@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    font-family: "Roboto", sans-serif;
+    text-transform: capitalize;
+    margin-bottom: 5%;
+}
+
+
+/*Fist Page*/
+.main{
+    margin: 10%;
+}
+
+.section1{
+    width: 100%;
+    height: 100%;
+}
+
+.gallery_container{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 50% 50%;
+    gap:10px;
+}
+
+.gallery_container img{
+    max-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+}
+
+/*Second Page*/
+.main_container{
+    margin: 10% 10% 0 10%;
+}
+
+p{
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 7px;
+    font-size: 60px;
+    font-weight: 100;
+}
+
+.image_container{
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(2, 30%);
+    gap: 10px;
+    height: 600px;     
+    overflow: hidden; 
+}
+
+.image_container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block
+}
+
+.image_container img:nth-child(3),
+.image_container img:nth-child(5),
+.image_container img:nth-child(8){
+    visibility: hidden;
+}
+
+
+/*Third Page*/
+
+
+.main3 {
+    margin: 5% 5% 3% 7%;
+}
+
+.section3 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.625rem; 
+}
+
+.left_container {
+    display: grid;
+    grid-template-rows: 30.77% 64.48%; 
+    gap: 0.75rem; 
+}
+
+.lower {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.3125rem;
+}
+
+.mini_wrap {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1.3125rem; 
+}
+
+.right_container {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 0.75rem; 
+}
+
+.upper_row, .lower_row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.3125rem; 
+}
+
+.upper img, .mid_row img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.mini_wrap img, .upper_row img, .lower_row img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.solo img {
+    width: 100%;
+    height: 421px;
+    object-fit: cover;
+}
+
+
+
+/*Forth Page*/
+
+.main4{
+    margin: 7% 0 3% 0;
+}
+.section4{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    gap: 10px; 
+}
+
+.left_mozaic{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 0;
+    width: 100%;
+    height: 600px; 
+}
+
+.right_mozaic{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 25% 25% 25% 25%;
+    gap: 0 5px;
+    width: 100%;
+    height: 800px; 
+    margin: -33% 1% 0 0;   
+    padding-left: 15px;
+    border-left: 1px solid gray;   
+}
+
+.left_mozaic img{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.right_mozaic img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.left_mozaic img:nth-child(1),
+.left_mozaic img:nth-child(2),
+.left_mozaic img:nth-child(4),
+.left_mozaic img:nth-child(6),
+.left_mozaic img:nth-child(8),
+.right_mozaic img:nth-child(2),
+.right_mozaic img:nth-child(3),
+.right_mozaic img:nth-child(6),
+.right_mozaic img:nth-child(7)
+{
+    visibility: hidden;
+}
